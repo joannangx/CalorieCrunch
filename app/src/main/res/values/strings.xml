@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Calorie Crunch</string>
+    <string name="exercise">Select Exercise</string>
+    <string name="amount">Enter Amount</string>
+    <string name="repetitions">reps</string>
+    <string name="minutes">mins</string>
+    <string name="convert_btn">Calculate</string>
+    <string name="compare_btn">Compare</string>
+    <string name="exercise_btn">Show Exercises</string>
+    <string name="male_radio">Male</string>
+    <string name="female_radio">Female</string>
+    <string name="calorieConvert_output"></string>
+    <string name="expenditure">Desired Calorie Expenditure</string>
+    <string name="cals">calories</string>
+    <string name="hint">E.g. 20</string>
+    <string name="optional">(Optional)</string>
+
+    <string-array name="all_exercises">
+        <item>Pushups</item>
+        <item>Situps</item>
+        <item>Squats</item>
+        <item>Leg-Lifts</item>
+        <item>Plank</item>
+        <item>Jumping Jacks</item>
+        <item>Pullups</item>
+        <item>Cycling</item>
+        <item>Walking</item>
+        <item>Jogging</item>
+        <item>Swimming</item>
+        <item>Stair-Climbing</item>
+    </string-array>
+</resources>

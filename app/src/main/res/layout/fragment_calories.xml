@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/convert_calories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:textSize="40dp"
+            android:text="Profile" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:text="@string/optional" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/dividersColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/weight_input"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textSize="25dp"
+            android:hint="Weight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textSize="22dp"
+            android:text="lbs" />
+
+        <RadioButton
+            android:id="@+id/male_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:textSize="21dp"
+            android:text="@string/male_radio" />
+
+        <RadioButton
+            android:id="@+id/female_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:text="@string/female_radio" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="40dp"
+        android:text="@string/exercise" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/dividersColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/dropdown_exercise"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="10dp"
+            android:entries="@array/all_exercises"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="40dp"
+        android:text="@string/amount" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:paddingBottom="10dp"
+        android:background="@color/dividersColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="27dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/amount_input"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textSize="25dp"
+            android:hint="@string/hint"/>
+
+        <RadioButton
+            android:id="@+id/rep_radBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:textSize="21dp"
+            android:text="@string/repetitions" />
+
+        <RadioButton
+            android:id="@+id/min_radBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:text="@string/minutes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/display_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/calConvert_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textSize="21dp"
+            android:gravity="center"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonText"
+            android:text="@string/convert_btn" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:paddingBottom="10dp"/>
+
+        <Button
+            android:id="@+id/calCompare_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textSize="21dp"
+            android:gravity="center"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonText"
+            android:text="@string/compare_btn"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:paddingBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/btn_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text = "@string/calorieConvert_output"/>
+    </LinearLayout>
+</LinearLayout>

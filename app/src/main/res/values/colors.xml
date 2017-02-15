@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="landingPageColor">#2A3B96</color>
+    <color name="landingPageText">#FAFBFF</color>
+    <color name="dividersColor">#434345</color>
+    <color name="buttonColor">#204BB0</color>
+    <color name="buttonText">#F0F4FC</color>
+</resources>

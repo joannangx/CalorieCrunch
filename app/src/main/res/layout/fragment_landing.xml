@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas. android.com/apk/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/landingPageColor"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:src="@drawable/landing_logo"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:textSize="30dp"
+        android:textColor="@color/landingPageText"
+        android:text="Shoot for the stars,"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/landingPageText"
+        android:text="they won't reach themselves"/>
+</LinearLayout>
